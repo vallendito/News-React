@@ -9,12 +9,15 @@ class Header extends Component {
             // title: 'The Keywords Are:',
             keywords: ''
         }
+
     }
     
     inputChange(event) {
         // console.log(event.target.value);
-        this.setState({ keywords: event.target.value })
+        this.setState({ keywords: event.target.value });
+        this.props.newsSearch(event.target.value);
     }
+
     
     render() {
 
@@ -23,7 +26,7 @@ class Header extends Component {
                 <div className="logo"
                 onClick={()=>console.log('clicked')}
                 >Logo</div>
-                <input 
+                <input  placeholder="Search Title"
                 onChange={this.inputChange.bind(this)}
                 />
             </header>
