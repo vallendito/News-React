@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+header {
+    padding-top: 15px;
+    background: #03a9f4;
+    text-align: center;
+}
+header input {
+    font-size: 20px;
+    margin: 20px 0;
+}
+.logo {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+}
+.news-item {
+    box-sizing: border-box;
+    border-bottom: 2px solid grey;
+    padding: 20px;
+}
